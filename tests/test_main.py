@@ -10,7 +10,7 @@ async def test_home():
     async with AsyncClient(transport=transport, base_url="http://testserver") as ac:
         response = await ac.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "FastAPI app deployed via CI/CD on Render!  ***** to test if it changes without manually deploy"}
+    assert response.json() == {"message": "FastAPI app deployed via CI/CD on Render!  ***** to test if it changes without manually deploy.."}
 
 
 

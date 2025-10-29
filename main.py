@@ -15,7 +15,7 @@ tasks = [
 
 @app.get("/")
 def home():
-    return {"message": "FastAPI app deployed via CI/CD on Render!"}
+    return {"message": "FastAPI app deployed via CI/CD on Render!  ***** to test if it changes without manually deploy"}
 
 @app.get("/tasks")
 def get_tasks():

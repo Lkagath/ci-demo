@@ -15,7 +15,7 @@ tasks = [
 
 @app.get("/")
 def home():
-    return {"message": "Welcome to FastAPI Task API!"}
+    return {"message": "FastAPI app deployed via CI/CD on Render!"}
 
 @app.get("/tasks")
 def get_tasks():
@@ -40,10 +40,3 @@ def delete_task(task_id: int):
     tasks = [task for task in tasks if task.id != task_id]
     return {"message": "Task deleted"}
 
-
-# git init
-# git add .
-# git commit -m "FastAPI project with CI"
-# git branch -M main
-# git remote add origin https://github.com/<your-username>/fastapi-ci-demo.git
-# git push -u origin main
